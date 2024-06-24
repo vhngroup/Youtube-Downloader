@@ -3,8 +3,8 @@
 ![YouTube_Downloader](https://github.com/vhngroup/Youtube-Downloader/blob/main/static/Example.png)
 
 ## Como usar?:
-** Recomendamos siempre usar entorno virtual venv.
-** Instalamos las dependemcias: pip install -r requirements.txt
-** Ejecutamos el script: streamlit run main.py
-** Ingresamos a la URL indicada por el script.
+* Recomendamos siempre usar entorno virtual venv.
+* Instalamos las dependemcias: pip install -r requirements.txt
+* Ejecutamos el script: streamlit run main.py
+* Ingresamos a la URL indicada por el script.
 
