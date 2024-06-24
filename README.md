@@ -8,3 +8,5 @@
 * Ejecutamos el script: ``` streamlit run main.py ```
 * Ingresamos a la URL indicada por el script.
 
+## Caracteristicas:
+Este script nos permite descragar en nuestro pc un video de Youtube, de acuerdo a la URL que le entregues, puedes seleccionar la calidad y formato del video, de acuerdo a las opcciones que identifique pytube
