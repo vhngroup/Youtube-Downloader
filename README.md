@@ -4,7 +4,7 @@
 
 ## Como usar?:
 * Recomendamos siempre usar entorno virtual venv.
-* Instalamos las dependemcias: pip install -r requirements.txt
-* Ejecutamos el script: streamlit run main.py
+* Instalamos las dependencias: ``` pip install -r requirements.txt ```
+* Ejecutamos el script: ``` streamlit run main.py ```
 * Ingresamos a la URL indicada por el script.
 
