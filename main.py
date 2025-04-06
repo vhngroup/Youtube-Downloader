@@ -1,10 +1,13 @@
 import pytube
 import streamlit as st
+from pytubefix import YouTube
+from pytubefix.cli import on_progress
 
 class YouTubeDownloader:
     def __init__(self, url):
         self.url = url
-        self.youtube = pytube.YouTube(self.url, on_progress_callback=YouTubeDownloader.onProgress)
+        #self.youtube = pytube.YouTube(self.url, on_progress_callback=YouTubeDownloader.onProgress)
+        self.youtube = YouTube(self.url, on_progress_callback=on_progress)
         self.stream = None
     
     def showTitle(self):
@@ -24,7 +27,6 @@ class YouTubeDownloader:
         file_size = self.stream.filesize / 1000000
         return file_size
     def getPermissionToContinue(self, file_size):
-        st.write(f"**Titulo:** {self.youtube.title}")
         st.write(f"**Autor:** {self.youtube.author}")
         st.write(f"**Tamaño:** {file_size:.2f} MB")
         st.write(f"**Resolución:** {self.stream.resolution or 'N/A'}")
